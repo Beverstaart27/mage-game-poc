@@ -1,0 +1,33 @@
+[gd_scene load_steps=4 format=3 uid="uid://bm37cnx7rnko3"]
+
+[ext_resource type="Texture2D" uid="uid://dtvniaywjf2ow" path="res://icon.svg" id="1_0otuc"]
+[ext_resource type="Script" path="res://BasicSpell.gd" id="1_6h4ps"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xbkem"]
+size = Vector2(133.333, 133.333)
+
+[node name="spell" type="CharacterBody2D"]
+scale = Vector2(0.09, 0.09)
+script = ExtResource("1_6h4ps")
+
+[node name="Sprite2D" type="Sprite2D" parent="." groups=["spells"]]
+texture = ExtResource("1_0otuc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(7.94729e-06, -3.49681e-06)
+scale = Vector2(0.96, 0.965)
+shape = SubResource("RectangleShape2D_xbkem")
+
+[node name="LifeCycle" type="Timer" parent="."]
+wait_time = 3.0
+autostart = true
+
+[node name="Area2D" type="Area2D" parent="." groups=["spells"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(7.94729e-06, -3.49681e-06)
+scale = Vector2(0.96, 0.965)
+shape = SubResource("RectangleShape2D_xbkem")
+
+[connection signal="timeout" from="LifeCycle" to="." method="_on_life_cycle_timeout"]
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]

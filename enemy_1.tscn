@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://iiveyxfm7lwl"]
+
+[ext_resource type="PackedScene" uid="uid://co5vhxhmm43io" path="res://enemy.tscn" id="1_mx6o7"]
+[ext_resource type="Script" path="res://enemy_1.gd" id="2_nwd7d"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1wb0v"]
+radius = 36.0355
+
+[node name="enemy1" instance=ExtResource("1_mx6o7")]
+script = ExtResource("2_nwd7d")
+speed = 100.0
+
+[node name="hitbox" parent="." index="1"]
+visible = false
+
+[node name="detectionArea" type="Area2D" parent="." index="2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="detectionArea" index="0"]
+shape = SubResource("CircleShape2D_1wb0v")
+
+[connection signal="area_entered" from="detectionArea" to="." method="_on_detection_area_area_entered"]
+[connection signal="body_entered" from="detectionArea" to="." method="_on_detection_area_body_entered"]

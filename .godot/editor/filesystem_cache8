@@ -1,0 +1,15 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1737216340
+BasicPlayerMovement.gd::GDScript::-1::1737204072::0::1::::<>CharacterBody2D<>::
+BasicSpell.gd::GDScript::-1::1737208139::0::1::::<>Node2D<>::
+basic__spell_1.tscn::PackedScene::3288436619630727768::1737208190::0::1::::<><>::uid://dtvniaywjf2ow::::res://icon.svg<>res://BasicSpell.gd
+character.tscn::PackedScene::2875424513751104221::1737208190::0::1::::<><>::res://BasicPlayerMovement.gd<>res://CharacterAttack.gd<>uid://dtvniaywjf2ow::::res://icon.svg
+CharacterAttack.gd::GDScript::-1::1737200419::0::1::::<>Node2D<>::
+counter.tscn::PackedScene::2391991019792699542::1737208190::0::1::::<><>::res://KillUrge.gd
+enemy.gd::GDScript::-1::1737208258::0::1::::<>Node2D<>::
+enemy.tscn::PackedScene::5818705287758996598::1737208258::0::1::::<><>::res://enemy.gd
+icon.svg::CompressedTexture2D::8537005658381517526::1737190411::1737190505::1::::<><>::
+KillUrge.gd::GDScript::-1::1737207995::0::1::::<>Label<>::
+node_3d.tscn::PackedScene::5197806824574216300::1737208190::0::1::::<><>::uid://c1y2oejcj1vi7::::res://temp background.jpg<>uid://bg74262ux6abt::::res://character.tscn<>uid://bacx0iqae52le::::res://counter.tscn<>uid://co5vhxhmm43io::::res://enemy.tscn
+temp background.jpg::CompressedTexture2D::6648960952092426468::1737193117::1737193123::1::::<><>::
+wizard basic attack.png::CompressedTexture2D::5750485732386195417::1737190825::1737190825::1::::<><>::

@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://cgb4ebs33mcf1"]
+
+[ext_resource type="Texture2D" uid="uid://c1y2oejcj1vi7" path="res://temp background.jpg" id="2_118g4"]
+[ext_resource type="PackedScene" uid="uid://bg74262ux6abt" path="res://character.tscn" id="2_wqrjr"]
+[ext_resource type="PackedScene" uid="uid://bacx0iqae52le" path="res://counter.tscn" id="4_mpd2p"]
+[ext_resource type="PackedScene" uid="uid://iiveyxfm7lwl" path="res://enemy_1.tscn" id="4_nr5l8"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="background" type="Sprite2D" parent="."]
+z_index = -1000
+position = Vector2(235, 192)
+texture = ExtResource("2_118g4")
+
+[node name="Character" parent="." instance=ExtResource("2_wqrjr")]
+
+[node name="Control" parent="." instance=ExtResource("4_mpd2p")]
+offset_left = -675.0
+offset_top = -526.0
+offset_right = -675.0
+offset_bottom = -526.0
+
+[node name="enemy1" parent="." instance=ExtResource("4_nr5l8")]
+position = Vector2(49, -384)
+speed = 100.0
+
+[node name="enemy2" parent="." instance=ExtResource("4_nr5l8")]
+position = Vector2(537, -4)
+speed = 100.0
