@@ -22,8 +22,6 @@ offset_bottom = -526.0
 
 [node name="enemy1" parent="." instance=ExtResource("4_nr5l8")]
 position = Vector2(49, -384)
-speed = 100.0
 
 [node name="enemy2" parent="." instance=ExtResource("4_nr5l8")]
 position = Vector2(537, -4)
-speed = 100.0

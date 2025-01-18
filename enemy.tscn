@@ -5,7 +5,7 @@
 [sub_resource type="CanvasTexture" id="CanvasTexture_oal1w"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_brpoe"]
-radius = 3.40588
+radius = 3.66447
 
 [node name="enemy" type="Node2D"]
 scale = Vector2(10, 10)
@@ -18,7 +18,7 @@ texture = SubResource("CanvasTexture_oal1w")
 offset = Vector2(0.8, -1.49012e-08)
 
 [node name="hitbox" type="Area2D" parent="." groups=["enemy"]]
-collision_layer = 2
+scale = Vector2(0.985714, 1)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="hitbox"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="hitbox" groups=["enemy"]]
 shape = SubResource("CircleShape2D_brpoe")

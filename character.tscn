@@ -36,6 +36,7 @@ texture = SubResource("CanvasTexture_7rcut")
 position_smoothing_enabled = true
 
 [node name="Area2D" type="Area2D" parent="." groups=["player"]]
+collision_layer = 2
 collision_mask = 3
 
 [node name="playerBody" type="CollisionShape2D" parent="Area2D"]

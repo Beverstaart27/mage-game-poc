@@ -1,11 +1,9 @@
 res://node_3d.tscn
 res://BasicSpell.gd
-res://enemy.gd
+res://enemy_1.gd
 res://basic__spell_1.tscn
 res://enemy.tscn
 res://character.tscn
 res://counter.tscn
-res://KillUrge.gd
-res://enemy_1.gd
 res://enemy_1.tscn
-res://BasicPlayerMovement.gd
+res://enemy.gd

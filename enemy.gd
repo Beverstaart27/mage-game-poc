@@ -2,7 +2,7 @@ extends Node2D
 
 class_name enemy
 
-var health: int
+var health: float
 @onready var killUrge:Label = $"../Control".get_child(0)
 
 
@@ -13,10 +13,9 @@ var health: int
 func _process(delta: float) -> void:
 	pass
 	
-func lowerHealth(amount: int)-> void:
+func lowerHealth(amount: float)-> void:
 	health -= amount
 	if(health < 0):
 		print(killUrge)
 		killUrge.addUrgeRepression()
 		queue_free()
-	

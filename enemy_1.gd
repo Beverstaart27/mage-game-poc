@@ -1,10 +1,13 @@
 extends enemy
 
+const MAX_HEALTH: float = 10.0
+@onready var target = $"../Control"
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
-
+	health = MAX_HEALTH
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+func _physics_process(_delta: float) -> void:
+	var direction = (target.position - position).normalized()
+	
