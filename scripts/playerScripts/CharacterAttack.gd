@@ -1,6 +1,6 @@
 extends Node2D
 
-const SPELLSPRITE = preload("res://basic__spell_1.tscn")
+const SPELLSPRITE = preload("res://scenes/basic__spell_1.tscn")
 @onready var spawnLocation: Marker2D = $SpellSpawnLocation
 
 var onCooldown:bool = false

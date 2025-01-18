@@ -1,6 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://bacx0iqae52le"]
+[gd_scene load_steps=2 format=3 uid="uid://fw1kcgeinmp6"]
 
-[ext_resource type="Script" path="res://KillUrge.gd" id="1_6gyuu"]
+[ext_resource type="Script" path="res://scripts/playerScripts/KillUrge.gd" id="1_6gyuu"]
 
 [node name="Control" type="Control"]
 layout_mode = 3

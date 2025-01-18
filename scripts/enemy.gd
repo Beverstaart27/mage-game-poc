@@ -3,10 +3,12 @@ extends CharacterBody2D
 class_name enemy
 
 var health: float
-@onready var killUrge:Label = $"../Control".get_child(0)
+@export var killUrge: Node
+
 
 func lowerHealth(amount: float)-> void:
 	health -= amount
 	if(health < 0):
-		killUrge.addUrgeRepression()
+		print(killUrge)
+		#killUrge.addUrgeRepression()
 		queue_free()

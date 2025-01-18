@@ -1,13 +1,13 @@
 [gd_scene load_steps=4 format=3 uid="uid://iiveyxfm7lwl"]
 
-[ext_resource type="PackedScene" uid="uid://co5vhxhmm43io" path="res://enemy.tscn" id="1_mx6o7"]
-[ext_resource type="Script" path="res://enemy_1.gd" id="2_nwd7d"]
+[ext_resource type="PackedScene" uid="uid://co5vhxhmm43io" path="res://scenes/enemy.tscn" id="1_u251l"]
+[ext_resource type="Script" path="res://scripts/enemy_1.gd" id="2_oiao0"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_8pieh"]
 radius = 5.40533
 
-[node name="enemy1" instance=ExtResource("1_mx6o7")]
-script = ExtResource("2_nwd7d")
+[node name="enemy1" instance=ExtResource("1_u251l")]
+script = ExtResource("2_oiao0")
 
 [node name="DetectionRadius" type="Area2D" parent="." index="0"]
 scale = Vector2(5, 5)

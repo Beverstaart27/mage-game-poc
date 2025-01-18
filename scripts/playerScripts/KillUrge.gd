@@ -1,17 +1,12 @@
-extends Label
+extends ProgressBar
 
 const startValue:int = 10000
 var urgeRepression: int
 
-
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	urgeRepression = 10000
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	text = str(urgeRepression)
+	value = startValue
+	
 
 func _physics_process(delta: float) -> void:
 	lowerUrgeRepression()
@@ -19,6 +14,6 @@ func _physics_process(delta: float) -> void:
 		pass
 
 func lowerUrgeRepression() -> void:
-	urgeRepression -= 10
+	value -= 10
 func addUrgeRepression() -> void:
-	urgeRepression += 1000
+	value += 1000
