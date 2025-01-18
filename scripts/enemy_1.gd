@@ -2,7 +2,6 @@ extends enemy
 
 const MAX_HEALTH: float = 10.0
 var speed: int = 100
-@onready var player = $"../Character"
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

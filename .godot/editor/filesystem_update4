@@ -13,3 +13,4 @@ res://scenes/enemy.gd
 res://scripts/enemy.gd
 res://scenes/enemy.tscn
 res://scripts/playerScripts/KillUrge.gd
+res://scripts/enemy_1.gd
