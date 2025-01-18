@@ -7,7 +7,7 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_brpoe"]
 radius = 3.66447
 
-[node name="enemy" type="Node2D"]
+[node name="enemy" type="CharacterBody2D"]
 scale = Vector2(10, 10)
 script = ExtResource("1_4tht7")
 

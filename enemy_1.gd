@@ -1,7 +1,8 @@
 extends enemy
 
 const MAX_HEALTH: float = 10.0
-@onready var target = $"../Control"
+var speed: int = 100
+@onready var player = $"../Character"
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -9,5 +10,7 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(_delta: float) -> void:
-	var direction = (target.position - position).normalized()
-	
+	velocity = Vector2.ZERO
+	if player:
+		velocity = position.direction_to(player.position) * speed
+		move_and_slide()

@@ -1,9 +1,11 @@
-res://node_3d.tscn
-res://BasicSpell.gd
-res://enemy_1.gd
-res://basic__spell_1.tscn
 res://enemy.tscn
+res://BasicSpell.gd
+res://enemy.gd
+res://enemy_1.gd
+res://enemy_1.tscn
+res://node_3d.tscn
+res://basic__spell_1.tscn
 res://character.tscn
 res://counter.tscn
-res://enemy_1.tscn
-res://enemy.gd
+res://enemyHandler.gd
+res://enemyHandler.tscn
