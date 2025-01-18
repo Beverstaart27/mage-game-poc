@@ -14,3 +14,6 @@ res://scripts/enemy.gd
 res://scenes/enemy.tscn
 res://scripts/playerScripts/KillUrge.gd
 res://scripts/enemy_1.gd
+res://scripts/playerScripts/BasicPlayerMovement.gd
+res://scripts/playerScripts/CharacterAttack.gd
+res://scenes/basic__spell_1.tscn

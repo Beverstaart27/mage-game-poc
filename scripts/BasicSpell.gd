@@ -21,6 +21,6 @@ func _on_life_cycle_timeout() -> void:
 
 func _on_area_2d_area_entered(area: Area2D) -> void:
 	if area.is_in_group("enemy"):
-		var enemy: Node = area.owner
-		enemy.lowerHealth(3)
+		var enemyHit: Node = area.owner
+		enemyHit.lowerHealth(3)
 		queue_free()

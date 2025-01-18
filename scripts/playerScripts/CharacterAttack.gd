@@ -4,12 +4,12 @@ const SPELLSPRITE = preload("res://scenes/basic__spell_1.tscn")
 @onready var spawnLocation: Marker2D = $SpellSpawnLocation
 
 var onCooldown:bool = false
-var coolDownTime = 1
+var coolDownTime = 0.5
 
 #I pretend this is the block where you set stuff on startup like unity :D
 
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	look_at(get_global_mouse_position())
 	
 	if Input.is_action_just_pressed("fire_spell") && !onCooldown:
