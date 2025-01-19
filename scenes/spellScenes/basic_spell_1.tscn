@@ -1,17 +1,17 @@
 [gd_scene load_steps=4 format=3 uid="uid://bm37cnx7rnko3"]
 
-[ext_resource type="Texture2D" uid="uid://dtvniaywjf2ow" path="res://icon.svg" id="1_0otuc"]
-[ext_resource type="Script" path="res://scripts/BasicSpell.gd" id="1_6h4ps"]
+[ext_resource type="Script" path="res://scripts/playerScripts/SpellScripts/SpammableSpell.gd" id="1_0uajr"]
+[ext_resource type="Texture2D" uid="uid://dtvniaywjf2ow" path="res://icon.svg" id="2_t453h"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xbkem"]
 size = Vector2(133.333, 133.333)
 
 [node name="spell" type="CharacterBody2D"]
 scale = Vector2(0.09, 0.09)
-script = ExtResource("1_6h4ps")
+script = ExtResource("1_0uajr")
 
 [node name="Sprite2D" type="Sprite2D" parent="." groups=["spells"]]
-texture = ExtResource("1_0otuc")
+texture = ExtResource("2_t453h")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(7.94729e-06, -3.49681e-06)

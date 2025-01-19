@@ -5,7 +5,7 @@ var timeBtwnSpawn: int #voor als je later tijdens runtime de tijd wil verlagen
 var canSpawn: bool
 var rng: RandomNumberGenerator = RandomNumberGenerator.new()
 
-@onready var enemy1: PackedScene = preload("res://enemy_1.tscn")
+@onready var enemy1: PackedScene = preload("res://scenes/enemy_1.tscn")
 func _ready() -> void:
 	wait_time = TIME_BTWN_SPAWN
 	canSpawn = true
