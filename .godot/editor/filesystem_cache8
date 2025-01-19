@@ -1,29 +1,31 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1737283535
+::res://::1737290570
 icon.svg::CompressedTexture2D::8537005658381517526::1737190411::1737190505::1::::<><>::
-node_3d.tscn::PackedScene::5197806824574216300::1737283440::0::1::::<><>::uid://c1y2oejcj1vi7::::res://temp background.jpg<>uid://bg74262ux6abt::::res://scenes/character.tscn<>uid://iiveyxfm7lwl::::res://scenes/enemy_1.tscn
+node_3d.tscn::PackedScene::5197806824574216300::1737290406::0::1::::<><>::uid://c1y2oejcj1vi7::::res://temp background.jpg<>uid://bg74262ux6abt::::res://scenes/character.tscn<>uid://iiveyxfm7lwl::::res://scenes/enemy_1.tscn
 temp background.jpg::CompressedTexture2D::6648960952092426468::1737193117::1737193123::1::::<><>::
 wizard basic attack.png::CompressedTexture2D::5750485732386195417::1737190825::1737190825::1::::<><>::
-::res://scenes/::1737283440
-character.tscn::PackedScene::2875424513751104221::1737283440::0::1::::<><>::res://scripts/playerScripts/BasicPlayerMovement.gd<>res://scripts/playerScripts/CharacterAttack.gd<>uid://dtvniaywjf2ow::::res://icon.svg<>res://scripts/playerScripts/KillUrge.gd
-counter.tscn::PackedScene::397957143038938549::1737283440::0::1::::<><>::res://scripts/playerScripts/KillUrge.gd
-enemy.tscn::PackedScene::5818705287758996598::1737283440::0::1::::<><>::res://scripts/enemy.gd
-enemyHandler.tscn::PackedScene::2116579089125718108::1737283440::0::1::::<><>::res://scripts/enemyHandler.gd
-enemy_1.tscn::PackedScene::579309267495841987::1737283440::0::1::::<><>::uid://co5vhxhmm43io::::res://scenes/enemy.tscn<>res://scripts/enemy_1.gd
-::res://scenes/spellScenes/::1737283440
-basic_spell_1.tscn::PackedScene::3288436619630727768::1737283440::0::1::::<><>::res://scripts/playerScripts/SpellScripts/SpammableSpell.gd<>uid://dtvniaywjf2ow::::res://icon.svg
-BigSpell.tscn::PackedScene::4382738625101845237::1737283440::0::1::::<><>::res://scripts/playerScripts/SpellScripts/BigSpell.gd<>uid://dtvniaywjf2ow::::res://icon.svg
-::res://scripts/::1737280359
-enemy.gd::GDScript::-1::1737239532::0::1::::enemy<>CharacterBody2D<>::
+::res://scenes/::1737290406
+character.tscn::PackedScene::2875424513751104221::1737290406::0::1::::<><>::res://scripts/playerScripts/BasicPlayerMovement.gd<>res://scripts/playerScripts/CharacterAttack.gd<>uid://dtvniaywjf2ow::::res://icon.svg<>res://scripts/playerScripts/KillUrge.gd
+counter.tscn::PackedScene::397957143038938549::1737290406::0::1::::<><>::res://scripts/playerScripts/KillUrge.gd
+enemy.tscn::PackedScene::5818705287758996598::1737290406::0::1::::<><>::res://scripts/enemy.gd
+enemyHandler.tscn::PackedScene::2116579089125718108::1737290405::0::1::::<><>::res://scripts/enemyHandler.gd
+enemy_1.tscn::PackedScene::579309267495841987::1737290405::0::1::::<><>::uid://co5vhxhmm43io::::res://scenes/enemy.tscn<>res://scripts/enemy_1.gd
+::res://scenes/spellScenes/::1737290570
+AreaSpell.gd::GDScript::-1::1737290397::0::1::::<>DamageSpell<>::
+AreaSpell.tscn::PackedScene::140937339636282493::1737290575::0::1::::<><>::res://scenes/spellScenes/AreaSpell.gd<>uid://dtvniaywjf2ow::::res://icon.svg
+basic_spell_1.tscn::PackedScene::3288436619630727768::1737290406::0::1::::<><>::res://scripts/playerScripts/SpellScripts/SpammableSpell.gd<>uid://dtvniaywjf2ow::::res://icon.svg
+BigSpell.tscn::PackedScene::4382738625101845237::1737290406::0::1::::<><>::res://scripts/playerScripts/SpellScripts/BigSpell.gd<>uid://dtvniaywjf2ow::::res://icon.svg
+::res://scripts/::1737286537
+enemy.gd::GDScript::-1::1737286537::0::1::::enemy<>CharacterBody2D<>::
 enemyHandler.gd::GDScript::-1::1737280359::0::1::::<>Timer<>::
 enemy_1.gd::GDScript::-1::1737239487::0::1::::<>enemy<>::
-::res://scripts/playerScripts/::1737283440
+::res://scripts/playerScripts/::1737290555
 BasicPlayerMovement.gd::GDScript::-1::1737282620::0::1::::<>CharacterBody2D<>::
-CharacterAttack.gd::GDScript::-1::1737283440::0::1::::<>Node2D<>::
-KillUrge.gd::GDScript::-1::1737280359::0::1::::<>ProgressBar<>::
+CharacterAttack.gd::GDScript::-1::1737290555::0::1::::<>Node2D<>::
+KillUrge.gd::GDScript::-1::1737290405::0::1::::<>ProgressBar<>::
 player.gd::GDScript::-1::1737238086::0::1::::<>Node<>::
-::res://scripts/playerScripts/SpellScripts/::1737283498
-BigSpell.gd::GDScript::-1::1737283498::0::1::::<>DamageSpell<>::
+::res://scripts/playerScripts/SpellScripts/::1737290405
+BigSpell.gd::GDScript::-1::1737284234::0::1::::<>DamageSpell<>::
 DamageSpell.gd::GDScript::-1::1737280682::0::1::::DamageSpell<>Spell<>::
-SpammableSpell.gd::GDScript::-1::1737281244::0::1::::<>DamageSpell<>::
+SpammableSpell.gd::GDScript::-1::1737290405::0::1::::<>DamageSpell<>::
 Spell.gd::GDScript::-1::1737280676::0::1::::Spell<>Node2D<>::

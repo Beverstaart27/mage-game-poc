@@ -37,6 +37,8 @@ wait_time = 5.0
 [node name="spell2Cooldown" type="Timer" parent="spellHand"]
 wait_time = 5.0
 
+[node name="spell3Cooldown" type="Timer" parent="spellHand"]
+
 [node name="playerSprite" type="Sprite2D" parent="."]
 modulate = Color(0.027451, 0.0470588, 0.054902, 1)
 scale = Vector2(50, 50)
@@ -70,5 +72,6 @@ script = ExtResource("4_2s0gp")
 
 [connection signal="timeout" from="spellHand/spell1Cooldown" to="spellHand" method="_on_spell_1_cooldown_timeout"]
 [connection signal="timeout" from="spellHand/spell2Cooldown" to="spellHand" method="_on_spell_2_cooldown_timeout"]
+[connection signal="timeout" from="spellHand/spell3Cooldown" to="spellHand" method="_on_spell_3_cooldown_timeout"]
 [connection signal="area_entered" from="playerBody" to="." method="_on_area_2d_area_entered"]
 [connection signal="body_entered" from="playerBody" to="." method="_on_area_2d_body_entered"]
