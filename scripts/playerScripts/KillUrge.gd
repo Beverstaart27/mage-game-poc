@@ -10,8 +10,11 @@ func _ready() -> void:
 
 func _physics_process(_delta: float) -> void:
 	lowerUrgeRepression()
-	if(urgeRepression < 0 ):
+	if urgeRepression < 0 :
 		pass
+		
+	if value < startValue/2:
+		fireRandomSpell()
 
 func lowerUrgeRepression() -> void:
 	value -= 10
@@ -20,4 +23,5 @@ func addUrgeRepression() -> void:
 	value += 1000
 	
 func fireRandomSpell() -> void:
-	pass
+	var player = self.get_parent().get_child(0)
+	

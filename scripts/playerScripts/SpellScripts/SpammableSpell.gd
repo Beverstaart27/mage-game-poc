@@ -11,7 +11,7 @@ func _ready() -> void:
 	global_position = pos
 	global_rotation = rot
 	damage = SPELL_DAMAGE
-	cooldown = 1
+	cooldown = 0.5
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:

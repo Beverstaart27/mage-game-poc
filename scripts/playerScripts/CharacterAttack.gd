@@ -4,19 +4,27 @@ const SPELLSPRITE1 = preload("res://scenes/spellScenes/basic_spell_1.tscn")
 const SPELLSPRITE2 = preload("res://scenes/spellScenes/BigSpell.tscn")
 @onready var spawnLocation: Marker2D = $SpellSpawnLocation
 
+@onready var spell1: DamageSpell = get_node("../basic_spell_1.tscn") #hahahahhaha deze zijn null :D:D:D::D:D:D:D:D:D:D::D:D:D:D:D:D:D:D:D:D
+@onready var spell2 = get_node("../BigSpell.tscn")
+
+@onready var urge = get_node
+
 var onCooldown1:bool = false
 var onCooldown2:bool = false
-var onCooldown3:bool = false
+var onCooldown3:bool = false 
 
-var cooldownTime1 = 0.5
-var cooldownTime2 = 1
+var cooldownTime1 = 0.5 
+var cooldownTime2 = 3
+var cooldownTime3 = 5
 
 
 func _process(_delta: float) -> void:
 	look_at(get_global_mouse_position())
 	
 	if Input.is_action_just_pressed("fire_spell_LMB") && !onCooldown1:
+		print(spell1)
 		shootSpell(1, cooldownTime1)
+		
 		#print("i say what what")
 		
 	if Input.is_action_just_pressed("fire_spell_Q") && !onCooldown2:
@@ -30,10 +38,8 @@ func shootSpell(spell: int, cooldown: float) -> void:
 	match spell:
 		1:
 			onCooldown1 = true
-			print(cooldown)
 			$spell1Cooldown.start(cooldown) 
 			spell_instance = SPELLSPRITE1.instantiate()
-
 		2: 
 			onCooldown2 = true
 			$spell2Cooldown.start(cooldown) 

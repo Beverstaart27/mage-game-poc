@@ -11,7 +11,7 @@ func _ready() -> void:
 	global_position = pos
 	global_rotation = rot
 	damage = SPELL_DAMAGE
-	cooldown = 10
+	cooldown = 3
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
@@ -22,7 +22,6 @@ func _on_life_cycle_timeout() -> void:
 
 
 func _on_enemy_detection_area_entered(area: Area2D) -> void:
-	print("yupyup")
 	if area.is_in_group("enemy"):
 		var enemyHit: Node = area.owner
 		enemyHit.lowerHealth(damage)
